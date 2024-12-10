@@ -69,10 +69,19 @@ class FoodBurgers extends StatelessWidget {
                       child: Column(
                         children: [
                           Container(
-                            width: 122,
-                            height: 84,
-                            child: Image.network(
-                              ImageNetworkUrl().imageUrl,
+                            decoration: const BoxDecoration(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(26)),
+                                color: Colors.red),
+                            child: ClipRRect(
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(20)),
+                              child: Image.network(
+                                ImageNetworkUrl().imageUrl,
+                                fit: BoxFit.cover,
+                                width: 170,
+                                height: 84,
+                              ),
                             ),
                           ),
                           const Padding(
@@ -213,7 +222,7 @@ class FoodBurgers extends StatelessWidget {
             ),
           ),
           Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                   borderRadius:
                       BorderRadius.only(topLeft: Radius.circular(100))),
               child: Image.network(

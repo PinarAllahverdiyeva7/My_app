@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
-import 'package:my_app/Calender_io_app/onboarding_page.dart';
-import 'package:my_app/foodDelivery_app/food_burgers.dart';
+import 'package:my_app/ECommerce_app/page_view_ecommerce.dart';
+import 'package:my_app/ECommerce_app/sign_up_page.dart';
+import 'package:my_app/ECommerce_app/splash_screen_1.dart';
+import 'package:my_app/ECommerce_app/splash_screen_2.dart';
+import 'package:my_app/ECommerce_app/splash_screen_3.dart';
+import 'package:my_app/Flutter_ders_part_3/text_field_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,17 +17,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData.light().copyWith(
-          appBarTheme: const AppBarTheme(
-              backgroundColor: Colors.transparent,
-              elevation: 0,
-              systemOverlayStyle: SystemUiOverlayStyle.light),
-          progressIndicatorTheme:
-              const ProgressIndicatorThemeData(color: Colors.red)),
-      home: const FoodBurgers(),
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Demo',
+        theme: ThemeData.light().copyWith(
+            appBarTheme: const AppBarTheme(
+                backgroundColor: Colors.transparent,
+                elevation: 0,
+                systemOverlayStyle: SystemUiOverlayStyle.light),
+            progressIndicatorTheme:
+                const ProgressIndicatorThemeData(color: Colors.red)),
+        home: const SignUpPage());
   }
 }
 
